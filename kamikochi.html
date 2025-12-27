@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kamikochi Summer</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background-color: #f0f8ff;
+        color: #333;
+    }
+
+    header {
+        background: url('images/kamikochi_header.jpg') no-repeat center center/cover;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(192 239 192);/* fixed color */
+        text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+
+    header h1 {
+        font-size: 3em;
+        text-align: center;
+        padding: 0 20px;
+        margin-bottom: 0;
+    }
+
+    .visit-info {
+        background-color: #e0f7fa;
+        text-align: center;
+        padding: 20px;
+        font-size: 1.1em;
+        color: #00695c;
+        border-bottom: 3px solid #2e8b57;
+        margin-top: 0;
+    }
+
+    section {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 0 20px;
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 60px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .content:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .text {
+        flex: 1 1 500px;
+    }
+
+    .text p {
+        font-size: 1.1em;
+        margin-bottom: 15px;
+    }
+
+    .image {
+        flex: 1 1 500px;
+    }
+
+    .image img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #2e8b57;
+        color: white;
+        margin-top: 50px;
+    }
+
+    @media(max-width: 768px) {
+        .content {
+            flex-direction: column !important;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Summer in Kamikochi</h1>
+</header>
+
+<div class="visit-info">
+    We visited <strong>Kamikochi</strong> on <strong>August 12, 2024</strong>.  
+    Kamikochi is located in the <strong>Japanese Alps, Nagano Prefecture, Japan</strong>.  
+    <br>Best time to visit: <strong>Late April to November (summer is perfect for hiking!)</strong> 🌞
+</div>
+
+<section>
+    <!-- Passage 1 -->
+    <div class="content">
+        <div class="text">
+           <p>Nestled in the heart of the Japanese Alps, Kamikochi is a serene mountain retreat that comes alive in summer. Surrounded by towering peaks, lush forests, and crystal-clear rivers, it’s the perfect escape for nature lovers and adventure seekers alike.</p>
+           <p>Stroll along peaceful trails or simply sit by the riverside to soak in the crisp mountain air. The gentle rustling of leaves and the distant chirping of birds create a soothing natural symphony that refreshes both body and mind.</p>
+        </div>
+        <div class="image">
+            <img src="images/Kamikochi/img4.jpeg" alt="Taisho Pond Reflection">
+        </div>
+    </div>
+
+    <!-- Passage 2 -->
+    <div class="content">
+        <div class="text">
+            <p>Hike along well-marked trails and discover the stunning landscapes, from vibrant wildflowers carpeting the valleys to the gentle flow of the Azusa River. The crisp mountain air, combined with panoramic views of the iconic Hotaka and Yakedake peaks, makes every step a refreshing experience.</p>
+            <p>For a touch of adventure, try spotting little forest creatures along the trails or crossing quaint wooden bridges over sparkling streams. Every corner is a postcard-perfect scene!</p>
+        </div>
+        <div class="image">
+            <img src="images/Kamikochi/img2.jpeg" alt="Azusa River Hiking Trail">
+        </div>
+    </div>
+
+    <!-- Passage 3 -->
+    <div class="content">
+        <div class="text">
+            <p>For those who love photography, summer in Kamikochi offers endless opportunities. Capture the sparkling waters of Taisho Pond reflecting the surrounding mountains or enjoy a peaceful picnic at one of the scenic riverbanks.</p>
+            <p>Bring your sketchbook or camera, and you’ll find inspiration at every turn: fluttering butterflies, small wooden huts nestled among greenery, and sun-dappled clearings perfect for a lazy afternoon. 🐦</p>
+        </div>
+        <div class="image">
+            <img src="images/Kamikochi/img3.jpeg" alt="Taisho Pond Reflection">
+        </div>
+    </div>
+
+    <!-- Passage 4 -->
+    <div class="content">
+        <div class="text">
+            <p>Whether you’re seeking a leisurely walk, a challenging hike, or simply a quiet spot to relax, Kamikochi in summer promises an unforgettable journey into the heart of Japan’s natural beauty.</p>
+            <p>End your day with a serene sunset view over the mountains, and don’t forget to pause and breathe—it’s the little moments, the gentle sounds of nature, and the warm sun that make Kamikochi truly magical. 🌞🌸</p>
+        </div>
+        <div class="image">
+            <img src="images/Kamikochi/img1.jpg" alt="Kamikochi Summer Nature">
+        </div>
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 Kamikochi Adventures
+</footer>
+
+</body>
+</html>

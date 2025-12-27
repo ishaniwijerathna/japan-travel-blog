@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Winter in Shirakawago</title>
+
+<style>
+/* ===== BASIC STYLES ===== */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #0b1c2d;
+    color: #f5f7fa;
+    overflow-x: hidden;
+}
+
+header {
+    height: 90vh;
+    background: url("images/shirakawa/shira6.jpeg") center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+}
+
+header h1 {
+    position: relative;
+    font-size: 3.2em;
+    text-shadow: 2px 2px 12px rgba(0,0,0,0.8);
+}
+
+/* ===== SECTION ===== */
+section {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.description {
+    font-size: 1.1em;
+    line-height: 1.9;
+    margin-bottom: 50px;
+}
+
+/* ===== GALLERY (MASONRY STYLE) ===== */
+.gallery {
+    column-count: 2;          /* desktop */
+    column-gap: 20px;
+    margin-top: 40px;
+}
+
+.gallery img {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    break-inside: avoid;
+    transition: transform 0.4s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .gallery {
+        column-count: 1;
+    }
+}
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #13293d;
+    color: #dbe6f1;
+    margin-top: 60px;
+}
+
+/* ===== SNOW ===== */
+.snowflake {
+    position: fixed;
+    top: -10px;
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.9;
+    animation: snow linear infinite;
+}
+
+@keyframes snow {
+    0% {
+        transform: translateX(0);
+        top: -10px;
+    }
+    100% {
+        transform: translateX(50px);
+        top: 100vh;
+    }
+}
+
+@media(max-width:768px){
+    header h1 { font-size: 2.2em; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Winter in Shirakawago ❄️</h1>
+</header>
+
+<section>
+    <div class="description">
+        <p>
+            Winter transforms Shirakawago into a magical snow-covered village straight from a fairytale. Thick layers of snow blanket the traditional gassho-zukuri farmhouses, creating a peaceful and timeless atmosphere deep in the Japanese Alps.
+        </p>
+
+        <p>
+            As snowflakes fall softly from the sky, warm lights glow from inside the steep thatched roofs, offering a beautiful contrast against the white landscape. Walking through the village feels calm and quiet, with only the soft crunch of snow beneath your feet.
+        </p>
+
+        <p>
+            The winter scenery, combined with Shirakawago’s rich history and preserved architecture, makes it one of Japan’s most unforgettable winter destinations. Whether viewed from the observation deck or explored on foot, the village in winter feels cozy, serene, and truly enchanting. ❄️✨
+        </p>
+    </div>
+
+    <!-- PHOTO GALLERY -->
+    <div class="gallery">
+        <img src="images/shirakawa/shira1.jpeg" alt="Shirakawago Winter Village">
+        <img src="images/shirakawa/shira2.jpeg" alt="Snowy Gassho Houses">
+        <img src="images/shirakawa/shira3.jpeg" alt="Winter Lights Shirakawago">
+        <img src="images/shirakawa/shira5.jpeg" alt="Snow Covered Farmhouses">
+        <img src="images/shirakawa/shira9.jpeg" alt="Winter Lights Shirakawago">
+        <img src="images/shirakawa/shira8.JPG" alt="Snow Covered Farmhouses">
+    </div>
+</section>
+
+<footer>
+    © 2025 Winter in Shirakawago
+</footer>
+
+<!-- ===== SNOW FALLING SCRIPT ===== -->
+<script>
+function createSnow() {
+    const snow = document.createElement("div");
+    snow.classList.add("snowflake");
+    snow.style.left = Math.random() * window.innerWidth + "px";
+    snow.style.animationDuration = 5 + Math.random() * 7 + "s";
+    snow.style.opacity = Math.random();
+    snow.style.transform = `scale(${Math.random() + 0.5})`;
+    document.body.appendChild(snow);
+
+    setTimeout(() => {
+        snow.remove();
+    }, 12000);
+}
+
+setInterval(createSnow, 200);
+</script>
+
+</body>
+</html>
