@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Visit Japan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover the beauty of Japan through its four seasons. Join a Sri Lankan couple as they explore cherry blossoms, summer festivals, autumn leaves, and winter snow.">
+  <title>Travel Japan - Discover Seasons & Adventures</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -10,23 +13,39 @@
   <!-- HERO -->
   <section class="hero">
     <nav>
-      <div class="logo">JAPAN</div>
-      <ul>
-        <li>Seasons</li>
-        <li>Places</li>
-        <li>Culture</li>
-        <li>Contact</li>
+      <div class="logo">TRAVEL JAPAN</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Seasons <i class="fas fa-caret-down"></i></a>
+          <div class="dropdown-content">
+            <a href="KawazuSakura.html">Spring 🌸</a>
+            <a href="kamikochi.html">Summer 🎐</a>
+            <a href="ShowaKinen.html">Autumn 🍁</a>
+            <a href="shirakawagoWinter.html">Winter ❄️</a>
+          </div>
+        </li>
+        <!-- <li><a href="#">Places</a></li>
+        <li><a href="#">Culture</a></li>
+        <li><a href="#">Contact</a></li> -->
       </ul>
     </nav>
 
     <div class="hero-text">
       <p>Join Us on Our Journey</p>
-      <h1>DISCOVER JAPAN 🌸</h1>
+      <h2 class="call-title">DISCOVER JAPAN 🌸</h2>
       <p class="sub">
-        Experience Japan through its beautiful four seasons cherry blossoms, festivals, autumn leaves, and winter snow.  
+        Experience Japan through its beautiful four seasons: cherry blossoms, festivals, autumn leaves, and winter snow.  
     We are a Sri Lankan couple living in Japan, and we love exploring new places together. Here are some of the amazing spots we've visited throughout the seasons.
       </p>
-      <button>EXPLORE JAPAN</button>
+      <div class="hero-buttons">
+        <div class="social-icons">
+          <a href="https://www.instagram.com/bokubakagaijin/" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@baka.gaijin0" class="social-icon" target="_blank"><i class="fab fa-tiktok"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61575183327884" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.youtube.com/@bokubakagaijintravel" class="social-icon" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -39,50 +58,110 @@
       <div class="card">
         <img src="images/spring.jpeg" alt="Spring Japan">
         <h3>SPRING 🌸</h3>
-        <button>Sakura Season</button>
+        <button onclick="location.href='KawazuSakura.html'">Sakura Season</button>
       </div>
 
       <div class="card">
         <img src="images/kamikochi.jpeg" alt="Summer Japan">
         <h3>SUMMER 🎐</h3>
-        <button><a href="kamikochi.html">Summer Adventures</a></button>
+        <button onclick="location.href='kamikochi.html'">Summer Adventures</button>
       </div>
 
       <div class="card">
         <img src="images/autumn.jpeg" alt="Autumn Japan">
         <h3>AUTUMN 🍁</h3>
-        <button>Fall Colors</button>
+        <button onclick="location.href='ShowaKinen.html'">Fall Colors</button>
       </div>
 
       <div class="card">
         <img src="images/shirakawawinter.jpg" alt="Winter Japan">
         <h3>WINTER ❄️</h3>
-        <button>Snow Japan</button>
+        <button onclick="location.href='shirakawagoWinter.html'">Snow Japan</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLES LIST -->
+  <section class="articles-list">
+    <h2>Latest Adventures 🌏</h2>
+    <div class="article-grid">
+      
+      <div class="article-card">
+        <img src="images/kastuoji/1.jpeg" alt="Katsuoji Temple">
+        <div class="article-content">
+          <h3>Katsuoji: The Daruma Temple</h3>
+          <a href="kasuoji.html" class="read-more">READ MORE</a>
+        </div>
+      </div>
+
+      <div class="article-card">
+        <img src="images/kamikochi.jpeg" alt="Kamikochi">
+        <div class="article-content">
+          <h3>Summer in Kamikochi</h3>
+          <a href="kamikochi.html" class="read-more">READ MORE</a>
+        </div>
+      </div>
+
+      <div class="article-card">
+        <img src="images/shirakawawinter.jpg" alt="Shirakawa-go">
+        <div class="article-content">
+          <h3>Winter in Shirakawa-go</h3>
+          <a href="shirakawagoWinter.html" class="read-more">READ MORE</a>
+        </div>
+      </div>
+
+      <div class="article-card">
+        <img src="images/showa.jpg" alt="Showa Kinen Park">
+        <div class="article-content">
+          <h3>Autumn in Showa Kinen Park</h3>
+          <a href="ShowaKinen.html" class="read-more">READ MORE</a>
+        </div>
       </div>
 
     </div>
   </section>
 
-  <!-- FEATURE -->
-  <section class="feature">
-    <img src="images/kamikochi1.jpg" alt="Temple Japan">
-
-    <div class="feature-text">
-      <h2>Breathe in Kamikochi</h2>
+  <!-- SOCIAL MEDIA -->
+  <section class="social-media">
+    <div class="social-content">
+      <h2>Follow Us 📸</h2>
       <p>
-    Kamikochi, nestled in the Japanese Alps, is a breathtaking summer retreat.  
-    Surrounded by lush green mountains, crystal-clear rivers, and vibrant wildflowers,  
-    it offers peaceful hiking trails, stunning views, and a chance to connect with nature.  
-    Summer in Kamikochi is perfect for escaping the city, enjoying cool mountain air,  
-    and experiencing the serene beauty of Japan's alpine landscapes.
+        Want to see more? Follow us on social media for exclusive videos, 
+        stunning photos, travel tips, and the best dates to visit these amazing places!
       </p>
-
-      <button class="learn-more-btn" onclick="location.href='kamikochi.html'">LEARN MORE</button>
+      <div class="social-icons">
+        <a href="https://www.tiktok.com/@baka.gaijin0" class="social-link tiktok" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
+        <a href="https://www.instagram.com/bokubakagaijin/" class="social-link instagram" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61575183327884" class="social-link facebook" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="https://www.youtube.com/@bokubakagaijintravel" class="social-link youtube" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+      </div>
     </div>
   </section>
 
+  <!-- GALLERY -->
+  <section class="gallery-section">
+    <h2>Travel Gallery 📸</h2>
+    <div class="gallery-grid">
+      <img src="images/KawazuSakura/sakura1.jpeg" alt="Sakura" class="gallery-img">
+      <img src="images/Kamikochi/img1.jpg" alt="Kamikochi" class="gallery-img">
+      <img src="images/showaKinen/showa1.jpeg" alt="Showa Kinen" class="gallery-img">
+      <img src="images/shirakawa/shira1.jpeg" alt="Shirakawa-go" class="gallery-img">
+      <img src="images/kastuoji/1.jpeg" alt="Katsuoji" class="gallery-img">
+      <img src="images/KawazuSakura/sakura2.jpeg" alt="Sakura River" class="gallery-img">
+      <img src="images/showaKinen/showa2.jpeg" alt="Autumn Leaves" class="gallery-img">
+      <img src="images/shirakawa/shira2.jpeg" alt="Winter Village" class="gallery-img">
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox">
+    <span class="close-lightbox">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div id="caption"></div>
+  </div>
+
   <footer>
-    © 2025 Visit Japan | Made with 🌸
+    © 2025 Travel Japan | traveljapan.blog | Made with 🌸
   </footer>
 
   <script src="script.js"></script>

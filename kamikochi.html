@@ -3,7 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kamikochi Summer</title>
+<meta name="description" content="Explore Kamikochi in summer. A complete guide to hiking in the Japanese Alps, featuring Taisho Pond, Azusa River, and breathtaking mountain views.">
+<title>Summer in Kamikochi - Japanese Alps Hiking Guide</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
 <style>
     body {
         font-family: Arial, sans-serif;
@@ -15,20 +18,30 @@
     }
 
     header {
-        background: url('images/kamikochi_header.jpg') no-repeat center center/cover;
-        height: 150px;
+        height: 90vh;
+        background: url('images/Kamikochi/img2.jpeg') center/cover no-repeat;
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
-        color: rgb(192 239 192);/* fixed color */
-        text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+        text-align: center;
+        color: white;
+    }
+
+    header::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0,0,0,0.35);
     }
 
     header h1 {
-        font-size: 3em;
-        text-align: center;
+        position: relative;
+        font-size: 3.5em;
+        text-shadow: 2px 2px 12px rgba(0,0,0,0.8);
         padding: 0 20px;
         margin-bottom: 0;
+        z-index: 2;
     }
 
     .visit-info {
@@ -88,7 +101,7 @@
     }
 
     @media(max-width: 768px) {
-        .content {
+        .content { z-index: 10;
             flex-direction: column !important;
         }
     }
@@ -97,6 +110,24 @@
 <body>
 
 <header>
+    <nav style="position: absolute; top: 0; width: 100%;">
+      <div class="logo">TRAVEL JAPAN</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Seasons <i class="fas fa-caret-down"></i></a>
+          <div class="dropdown-content">
+            <a href="KawazuSakura.html">Spring 🌸</a>
+            <a href="kamikochi.html">Summer 🎐</a>
+            <a href="ShowaKinen.html">Autumn 🍁</a>
+            <a href="shirakawagoWinter.html">Winter ❄️</a>
+          </div>
+        </li>
+        <!-- <li><a href="#">Places</a></li>
+        <li><a href="#">Culture</a></li>
+        <li><a href="#">Contact</a></li> -->
+      </ul>
+    </nav>
     <h1>Summer in Kamikochi</h1>
 </header>
 
@@ -153,7 +184,7 @@
 </section>
 
 <footer>
-    &copy; 2025 Kamikochi Adventures
+    © 2025 Travel Japan | traveljapan.blog | Made with 🌸
 </footer>
 
 </body>

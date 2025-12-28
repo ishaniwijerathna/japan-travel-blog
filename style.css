@@ -20,6 +20,10 @@ body {
   color: white;
 }
 
+.call-title {
+  font-size: 35px
+}
+
 .hero::after {
   content: "";
   position: absolute;
@@ -32,18 +36,74 @@ nav {
   z-index: 3;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 30px 60px;
 }
 
 nav ul {
   display: flex;
-  gap: 30px;
+  gap: 40px;
   list-style: none;
+  align-items: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+nav ul li a:hover {
+  color: #FFDAB9; /* Peach color to match subtext */
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.95);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5px;
+  top: 100%;
+  left: 0;
+  padding: 10px 0;
+}
+
+.dropdown-content a {
+  color: #333 !important; /* Override white color */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 1rem !important;
+  text-transform: none !important;
+  text-shadow: none !important;
+  font-weight: normal !important;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color: #d65db1 !important; /* Pinkish color on hover */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .logo {
   font-weight: bold;
-  letter-spacing: 15px;
+  letter-spacing: 6px;
   font-size: 1.9rem;
   
 }
@@ -51,8 +111,8 @@ nav ul {
 .hero-text {
   position: relative;
   z-index: 2;
-  max-width: 600px;
-  padding: 120px 60px;
+  max-width: 500px;
+  padding: 50px;
 }
 
 .hero-text h1 {
@@ -61,20 +121,42 @@ nav ul {
 }
 
 .hero-text .sub {
-  margin-top: 60px;
+  margin-top: 70px;
   font-size: 1.2rem;
   line-height: 1.6;
   color: #FFDAB9;
 }
 
+.hero-buttons {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
 .hero-text button {
-  margin-top: 100px;
   padding: 14px 30px;
   background: transparent;
   border: 4px solid white;
   color: white;
   cursor: pointer;
-  
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icon {
+  color: white;
+  font-size: 1.8rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+  color: #FFDAB9;
 }
 
 /* SEASONS */
@@ -161,4 +243,234 @@ footer {
   padding: 20px;
   background: #2f3e3a;
   color: white;
+}
+
+/* ARTICLES LIST SECTION */
+.articles-list {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.articles-list h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.article-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.article-card:hover {
+    transform: translateY(-5px);
+}
+
+.article-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.article-content {
+    padding: 20px;
+}
+
+.article-content h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #222;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #ff4757;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.read-more:hover {
+    color: #e84118;
+    text-decoration: underline;
+}
+
+/* SOCIAL MEDIA SECTION */
+.social-media {
+    background: #f9f9f9;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.social-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.social-content p {
+    font-size: 1.2em;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.social-link i {
+    font-size: 1.4em;
+}
+
+.tiktok {
+    background: #000;
+}
+
+.instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.facebook {
+    background: #1877f2;
+}
+
+.youtube {
+    background: #FF0000;
+}
+
+/* GALLERY SECTION */
+.gallery-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.gallery-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.gallery-img:hover {
+    transform: scale(1.03);
+    filter: brightness(1.1);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* LIGHTBOX */
+.lightbox {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    padding-top: 60px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.9); 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+    animation: zoomIn 0.3s;
+}
+
+@keyframes zoomIn {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+.close-lightbox {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close-lightbox:hover,
+.close-lightbox:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    font-size: 1.2em;
 }

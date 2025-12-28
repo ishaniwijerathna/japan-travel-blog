@@ -3,7 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Showa Kinen Park - Autumn</title>
+<meta name="description" content="Visit Showa Kinen Park in autumn for stunning ginkgo avenues and colorful foliage. A top spot for fall colors in Tachikawa, Tokyo.">
+<title>Showa Kinen Park Autumn Guide - Tokyo Fall Colors</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
 <style>
     body {
         font-family: Arial, sans-serif;
@@ -15,20 +18,29 @@
     }
 
     header {
-        width: 100%;
-        height: 300px;
-        background: url('images/showa_header.jpg') no-repeat center center/cover;
+        height: 90vh;
+        background: url('images/showaKinen/showa3.jpeg') center/cover no-repeat;
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
+        text-align: center;
         color: white;
-        text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+
+    header::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0,0,0,0.35);
     }
 
     header h1 {
-        font-size: 3em;
-        text-align: center;
+        position: relative;
+        font-size: 3.5em;
+        text-shadow: 2px 2px 12px rgba(0,0,0,0.8);
         padding: 0 20px;
+        z-index: 2;
     }
 
     .visit-info {
@@ -92,7 +104,7 @@
 
     @media(max-width: 600px) {
         .gallery img {
-            width: 100%;
+            width: 100%; z-index: 10;
         }
     }
 </style>
@@ -100,13 +112,31 @@
 <body>
 
 <header>
+    <nav style="position: absolute; top: 0; width: 100%;">
+      <div class="logo">TRAVEL JAPAN</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Seasons <i class="fas fa-caret-down"></i></a>
+          <div class="dropdown-content">
+            <a href="KawazuSakura.html">Spring 🌸</a>
+            <a href="kamikochi.html">Summer 🎐</a>
+            <a href="ShowaKinen.html">Autumn 🍁</a>
+            <a href="shirakawagoWinter.html">Winter ❄️</a>
+          </div>
+        </li>
+        <!-- <li><a href="#">Places</a></li>
+        <li><a href="#">Culture</a></li>
+        <li><a href="#">Contact</a></li> -->
+      </ul>
+    </nav>
     <h1>Showa Kinen Park - Autumn 🍁</h1>
 </header>
 
 <div class="visit-info">
-    Visited <strong>Showa Kinen Park</strong> on <strong>End of November 2024</strong>.  
-    Location: <strong>Tachikawa, Tokyo, Japan</strong>.  
-    Best time to visit: <strong>Late October to early December (for autumn colors)</strong> 🍂
+    Visited <strong>Showa Kinen Park</strong> at the <strong>end of November 2024</strong>.  
+    <br>Location: <strong>Tachikawa, Tokyo, Japan</strong>.  
+    <br>Best time to visit: <strong>Late October to early December (for autumn colors)</strong> 🍂
 </div>
 
 <section>
@@ -117,7 +147,7 @@
 
     <!-- Gallery of 4 Photos: Yellow Flowers -->
     <div class="gallery">
-        <img src="images/showaKinen/showa1.jpeg">
+        <img src="images/showaKinen/showa1.jpeg" alt="Yellow Flowers 1">
         <img src="images/showaKinen/showa2.jpeg" alt="Yellow Flowers 2">
         <img src="images/showaKinen/showa3.jpeg" alt="Yellow Flowers 3">
         <img src="images/showaKinen/showa4.jpeg" alt="Yellow Flowers 4">
@@ -125,9 +155,9 @@
 
     <!-- Second Passage: Autumn Colors -->
     <div class="passage">
-        Beyond the flower fields, Showa Kinen Park shines in autumn with endless shades of yellow. Tall ginkgo trees line the wide pathways, their leaves turning a brilliant golden color that glows under the soft autumn sunlight. Walking through these yellow-lined paths feels calm and joyful, with fallen leaves creating a golden carpet beneath your feet.
+        <p>Beyond the flower fields, Showa Kinen Park shines in autumn with endless shades of yellow. Tall ginkgo trees line the wide pathways, their leaves turning a brilliant golden color that glows under the soft autumn sunlight. Walking through these yellow-lined paths feels calm and joyful, with fallen leaves creating a golden carpet beneath your feet.</p>
 
-Gentle breezes send yellow leaves floating through the air, while ponds and open spaces reflect the warm hues, making the scenery feel peaceful and dreamy. This golden season transforms Showa Kinen Park into one of Tokyo’s most beautiful autumn destinations, perfect for slow walks, photography, and quiet moments in nature. 🍂✨</p>
+<p>Gentle breezes send yellow leaves floating through the air, while ponds and open spaces reflect the warm hues, making the scenery feel peaceful and dreamy. This golden season transforms Showa Kinen Park into one of Tokyo’s most beautiful autumn destinations, perfect for slow walks, photography, and quiet moments in nature. 🍂✨</p>
     </div>
 
     <!-- Gallery of 4 Photos: Autumn Colors -->
@@ -145,9 +175,9 @@ Gentle breezes send yellow leaves floating through the air, while ponds and open
 
     <!-- Third Passage: After Ice Cream -->
     <div class="passage">
-        <p> Beyond the yellow flowers, the park bursts into a rich autumn symphony of red, orange, and golden leaves. Long walking paths lined with towering maple and ginkgo trees form breathtaking tunnels of color, where fallen leaves gently carpet the ground underfoot. As the sunlight filters through the foliage, the scenery glows with warmth and calm.
+        <p> Beyond the yellow flowers, the park bursts into a rich autumn symphony of red, orange, and golden leaves. Long walking paths lined with towering maple and ginkgo trees form breathtaking tunnels of color, where fallen leaves gently carpet the ground underfoot. As the sunlight filters through the foliage, the scenery glows with warmth and calm.</p>
 
-Lakes and quiet ponds mirror these fiery hues, creating picture-perfect reflections that change with every step. The soft rustling of leaves, cool autumn breeze, and peaceful atmosphere make every corner of Showa Kinen Park feel like a living postcard—an unforgettable autumn escape right in the heart of Tokyo. 🍁✨</p>
+<p>Lakes and quiet ponds mirror these fiery hues, creating picture-perfect reflections that change with every step. The soft rustling of leaves, cool autumn breeze, and peaceful atmosphere make every corner of Showa Kinen Park feel like a living postcard—an unforgettable autumn escape right in the heart of Tokyo. 🍁✨</p>
     </div>
 
     <!-- More Photos -->
@@ -170,7 +200,7 @@ Lakes and quiet ponds mirror these fiery hues, creating picture-perfect reflecti
     </section>
 
 <footer>
-    &copy; 2025 Showa Kinen Park Adventures
+    © 2025 Travel Japan | traveljapan.blog | Made with 🌸
 </footer>
 
 </body>
