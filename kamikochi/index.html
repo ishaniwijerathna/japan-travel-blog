@@ -6,126 +6,37 @@
 <meta name="description" content="Explore Kamikochi in summer. A complete guide to hiking in the Japanese Alps, featuring Taisho Pond, Azusa River, and breathtaking mountain views.">
 <title>Summer in Kamikochi - Japanese Alps Hiking Guide</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="../style.css">
 <link rel="stylesheet" href="style.css">
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        line-height: 1.6;
-        background-color: #f0f8ff;
-        color: #333;
-    }
-
-    header {
-        height: 90vh;
-        background: url('images/Kamikochi/img2.jpeg') center/cover no-repeat;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        color: white;
-    }
-
-    header::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: rgba(0,0,0,0.35);
-    }
-
-    header h1 {
-        position: relative;
-        font-size: 3.5em;
-        text-shadow: 2px 2px 12px rgba(0,0,0,0.8);
-        padding: 0 20px;
-        margin-bottom: 0;
-        z-index: 2;
-    }
-
-    .visit-info {
-        background-color: #e0f7fa;
-        text-align: center;
-        padding: 20px;
-        font-size: 1.1em;
-        color: #00695c;
-        border-bottom: 3px solid #2e8b57;
-        margin-top: 0;
-    }
-
-    section {
-        max-width: 1200px;
-        margin: 50px auto;
-        padding: 0 20px;
-    }
-
-    .content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 60px;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-
-    .content:nth-child(even) {
-        flex-direction: row-reverse;
-    }
-
-    .text {
-        flex: 1 1 500px;
-    }
-
-    .text p {
-        font-size: 1.1em;
-        margin-bottom: 15px;
-    }
-
-    .image {
-        flex: 1 1 500px;
-    }
-
-    .image img {
-        width: 100%;
-        border-radius: 10px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    }
-
-    footer {
-        text-align: center;
-        padding: 20px;
-        background-color: #2e8b57;
-        color: white;
-        margin-top: 50px;
-    }
-
-    @media(max-width: 768px) {
-        .content { z-index: 10;
-            flex-direction: column !important;
-        }
-    }
-</style>
 </head>
 <body>
 
 <header>
-    <nav style="position: absolute; top: 0; width: 100%;">
+    <nav class="page-nav">
       <div class="logo">TRAVEL JAPAN</div>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="../home/index.html">Home</a></li>
         <li class="dropdown">
           <a href="#" class="dropbtn">Seasons <i class="fas fa-caret-down"></i></a>
           <div class="dropdown-content">
-            <a href="KawazuSakura.html">Spring 🌸</a>
-            <a href="kamikochi.html">Summer 🎐</a>
-            <a href="ShowaKinen.html">Autumn 🍁</a>
-            <a href="shirakawagoWinter.html">Winter ❄️</a>
+            <a href="../KawazuSakura/index.html">Spring 🌸</a>
+            <a href="../kamikochi/index.html">Summer 🎐</a>
+            <a href="../ShowaKinen/index.html">Autumn 🍁</a>
+            <a href="../shirakawagoWinter/index.html">Winter ❄️</a>
           </div>
         </li>
-        <!-- <li><a href="#">Places</a></li>
-        <li><a href="#">Culture</a></li>
-        <li><a href="#">Contact</a></li> -->
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Places <i class="fas fa-map-marker-alt"></i></a>
+                    <div class="dropdown-content">
+                        <a href="../KawazuSakura/index.html">Kawazu Sakura (Matsuda)</a>
+                        <a href="../kamikochi/index.html">Kamikochi (Japanese Alps)</a>
+                        <a href="../ShowaKinen/index.html">Showa Kinen Park</a>
+                        <a href="../LakeKawaguchi/index.html">Lake Kawaguchi</a>
+                        <a href="../kasuoji/index.html">Katsuoji Temple</a>
+                        <a href="../shirakawagoWinter/index.html">Shirakawa-go Winter</a>
+                        <a href="../teamLabs/index.html">TeamLabs Borderless</a>
+                    </div>
+                </li>
       </ul>
     </nav>
     <h1>Summer in Kamikochi</h1>
@@ -145,7 +56,7 @@
            <p>Stroll along peaceful trails or simply sit by the riverside to soak in the crisp mountain air. The gentle rustling of leaves and the distant chirping of birds create a soothing natural symphony that refreshes both body and mind.</p>
         </div>
         <div class="image">
-            <img src="images/Kamikochi/img4.jpeg" alt="Taisho Pond Reflection">
+            <img src="../images/Kamikochi/img4.jpeg" alt="Taisho Pond Reflection">
         </div>
     </div>
 
@@ -156,7 +67,7 @@
             <p>For a touch of adventure, try spotting little forest creatures along the trails or crossing quaint wooden bridges over sparkling streams. Every corner is a postcard-perfect scene!</p>
         </div>
         <div class="image">
-            <img src="images/Kamikochi/img2.jpeg" alt="Azusa River Hiking Trail">
+            <img src="../images/Kamikochi/img2.jpeg" alt="Azusa River Hiking Trail">
         </div>
     </div>
 
@@ -167,7 +78,7 @@
             <p>Bring your sketchbook or camera, and you’ll find inspiration at every turn: fluttering butterflies, small wooden huts nestled among greenery, and sun-dappled clearings perfect for a lazy afternoon. 🐦</p>
         </div>
         <div class="image">
-            <img src="images/Kamikochi/img3.jpeg" alt="Taisho Pond Reflection">
+            <img src="../images/Kamikochi/img3.jpeg" alt="Taisho Pond Reflection">
         </div>
     </div>
 
@@ -178,7 +89,31 @@
             <p>End your day with a serene sunset view over the mountains, and don’t forget to pause and breathe—it’s the little moments, the gentle sounds of nature, and the warm sun that make Kamikochi truly magical. 🌞🌸</p>
         </div>
         <div class="image">
-            <img src="images/Kamikochi/img1.jpg" alt="Kamikochi Summer Nature">
+            <img src="../images/Kamikochi/img1.jpg" alt="Kamikochi Summer Nature">
+        </div>
+    </div>
+</section>
+
+<section class="similar-places">
+    <h2>Similar Places to Explore</h2>
+    <div class="similar-grid">
+        <div class="similar-card" style="background-image: url('../images/KawazuSakura/sakura1.jpeg');">
+            <span>Spring Blossoms</span>
+            <h3>Kawazu Sakura</h3>
+            <p>Chase early-blooming cherry blossoms along Matsuda's hillside paths overlooking Mount Fuji.</p>
+            <a href="../KawazuSakura/index.html">Read Guide</a>
+        </div>
+        <div class="similar-card" style="background-image: url('../images/kawaguchi/lake1.jpeg');">
+            <span>Lake Retreat</span>
+            <h3>Lake Kawaguchi</h3>
+            <p>Swap alpine peaks for Fuji reflections, maple corridors, and lakeside night illuminations.</p>
+            <a href="../LakeKawaguchi/index.html">Read Guide</a>
+        </div>
+        <div class="similar-card" style="background-image: url('../images/shirakawa/shira1.jpeg');">
+            <span>Winter Wonder</span>
+            <h3>Shirakawa-go</h3>
+            <p>Step into a snow-covered fairytale village where gassho farmhouses glow each winter evening.</p>
+            <a href="../shirakawagoWinter/index.html">Read Guide</a>
         </div>
     </div>
 </section>
@@ -187,5 +122,6 @@
     © 2025 Travel Japan | traveljapan.blog | Made with 🌸
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>

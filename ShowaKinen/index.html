@@ -6,128 +6,37 @@
 <meta name="description" content="Visit Showa Kinen Park in autumn for stunning ginkgo avenues and colorful foliage. A top spot for fall colors in Tachikawa, Tokyo.">
 <title>Showa Kinen Park Autumn Guide - Tokyo Fall Colors</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="../style.css">
 <link rel="stylesheet" href="style.css">
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #fff8f0;
-        color: #333;
-        line-height: 1.6;
-    }
-
-    header {
-        height: 90vh;
-        background: url('images/showaKinen/showa1.jpeg') center/cover no-repeat;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        color: white;
-    }
-
-    header::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: rgba(0,0,0,0.35);
-    }
-
-    header h1 {
-        position: relative;
-        font-size: 3.5em;
-        text-shadow: 2px 2px 12px rgba(0,0,0,0.8);
-        padding: 0 20px;
-        z-index: 2;
-    }
-
-    .visit-info {
-        background-color: #ffe4b5;
-        text-align: center;
-        padding: 15px 20px;
-        font-size: 1.1em;
-        color: #8b4513;
-        border-bottom: 3px solid #d2691e;
-        margin-top: -10px;
-    }
-
-    section {
-        max-width: 1200px;
-        margin: 50px auto;
-        padding: 0 20px;
-    }
-
-    .passage {
-        margin-bottom: 40px;
-    }
-
-    .passage p {
-        font-size: 1.1em;
-        margin-bottom: 15px;
-    }
-
-    .gallery {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-        margin-bottom: 50px;
-    }
-
-    .gallery img {
-        width: calc(25% - 15px);
-        border-radius: 10px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-        transition: transform 0.3s;
-    }
-
-    .gallery img:hover {
-        transform: scale(1.05);
-    }
-
-    footer {
-        text-align: center;
-        padding: 25px 20px;
-        background-color: #d2691e;
-        color: white;
-        font-size: 1.1em;
-        margin-top: 50px;
-    }
-
-    @media(max-width: 700px) {
-        .gallery img {
-            width: calc(50% - 15px);
-        }
-    }
-
-    @media(max-width: 600px) {
-        .gallery img {
-            width: 100%; z-index: 10;
-        }
-    }
-</style>
 </head>
 <body>
 
 <header>
-    <nav style="position: absolute; top: 0; width: 100%;">
+    <nav class="page-nav">
       <div class="logo">TRAVEL JAPAN</div>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="../home/index.html">Home</a></li>
         <li class="dropdown">
           <a href="#" class="dropbtn">Seasons <i class="fas fa-caret-down"></i></a>
           <div class="dropdown-content">
-            <a href="KawazuSakura.html">Spring 🌸</a>
-            <a href="kamikochi.html">Summer 🎐</a>
-            <a href="ShowaKinen.html">Autumn 🍁</a>
-            <a href="shirakawagoWinter.html">Winter ❄️</a>
+            <a href="../KawazuSakura/index.html">Spring 🌸</a>
+            <a href="../kamikochi/index.html">Summer 🎐</a>
+            <a href="../ShowaKinen/index.html">Autumn 🍁</a>
+            <a href="../shirakawagoWinter/index.html">Winter ❄️</a>
           </div>
         </li>
-        <!-- <li><a href="#">Places</a></li>
-        <li><a href="#">Culture</a></li>
-        <li><a href="#">Contact</a></li> -->
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Places <i class="fas fa-map-marker-alt"></i></a>
+                    <div class="dropdown-content">
+                        <a href="../KawazuSakura/index.html">Kawazu Sakura (Matsuda)</a>
+                        <a href="../kamikochi/index.html">Kamikochi (Japanese Alps)</a>
+                        <a href="../ShowaKinen/index.html">Showa Kinen Park</a>
+                        <a href="../LakeKawaguchi/index.html">Lake Kawaguchi</a>
+                        <a href="../kasuoji/index.html">Katsuoji Temple</a>
+                        <a href="../shirakawagoWinter/index.html">Shirakawa-go Winter</a>
+                        <a href="../teamLabs/index.html">TeamLabs Borderless</a>
+                    </div>
+                </li>
       </ul>
     </nav>
     <h1>Showa Kinen Park - Autumn 🍁</h1>
@@ -147,10 +56,10 @@
 
     <!-- Gallery of 4 Photos: Yellow Flowers -->
     <div class="gallery">
-        <img src="images/showaKinen/showa1.jpeg" alt="Yellow Flowers 1">
-        <img src="images/showaKinen/showa2.jpeg" alt="Yellow Flowers 2">
-        <img src="images/showaKinen/showa3.jpeg" alt="Yellow Flowers 3">
-        <img src="images/showaKinen/showa4.jpeg" alt="Yellow Flowers 4">
+        <img src="../images/showaKinen/showa1.jpeg" alt="Yellow Flowers 1">
+        <img src="../images/showaKinen/showa2.jpeg" alt="Yellow Flowers 2">
+        <img src="../images/showaKinen/showa3.jpeg" alt="Yellow Flowers 3">
+        <img src="../images/showaKinen/showa4.jpeg" alt="Yellow Flowers 4">
     </div>
 
     <!-- Second Passage: Autumn Colors -->
@@ -162,15 +71,15 @@
 
     <!-- Gallery of 4 Photos: Autumn Colors -->
     <div class="gallery">
-        <img src="images/showaKinen/showa5.jpg" alt="Autumn Colors 1">
-        <img src="images/showaKinen/showa6.jpeg" alt="Autumn Colors 2">
-        <img src="images/showaKinen/showa7.jpeg" alt="Autumn Colors 3">
-        <img src="images/showaKinen/showa8.jpeg" alt="Autumn Colors 4">
+        <img src="../images/showaKinen/showa5.jpg" alt="Autumn Colors 1">
+        <img src="../images/showaKinen/showa6.jpeg" alt="Autumn Colors 2">
+        <img src="../images/showaKinen/showa7.jpeg" alt="Autumn Colors 3">
+        <img src="../images/showaKinen/showa8.jpeg" alt="Autumn Colors 4">
     </div>
 
     <!-- Ice Cream Photo
     <div class="passage" style="text-align:center; margin-bottom:40px;">
-        <img src="images/icecream.jpg" alt="Ice Cream" style="width:300px; border-radius:10px; box-shadow:0 4px 15px rgba(0,0,0,0.2);">
+        <img src="../images/icecream.jpg" alt="Ice Cream" style="width:300px; border-radius:10px; box-shadow:0 4px 15px rgba(0,0,0,0.2);">
     </div> -->
 
     <!-- Third Passage: After Ice Cream -->
@@ -182,9 +91,9 @@
 
     <!-- More Photos -->
     <div class="gallery">
-        <img src="images/showaKinen/showa9.jpeg" alt="Autumn landscape">
-        <img src="images/showaKinen/showa10.jpeg" alt="Walking trail">
-        <img src="images/showaKinen/showa11.jpeg" alt="Lake view">
+        <img src="../images/showaKinen/showa9.jpeg" alt="Autumn landscape">
+        <img src="../images/showaKinen/showa10.jpeg" alt="Walking trail">
+        <img src="../images/showaKinen/showa11.jpeg" alt="Lake view">
     </div>
 
 
@@ -199,9 +108,34 @@
 
     </section>
 
+<section class="similar-places">
+    <h2>Similar Places to Explore</h2>
+    <div class="similar-grid">
+        <div class="similar-card" style="background-image: url('../images/kawaguchi/Corridor2.jpeg');">
+            <span>Fuji Views</span>
+            <h3>Lake Kawaguchi</h3>
+            <p>Stroll maple corridors beside Mount Fuji and enjoy twilight illuminations along the lakeshore.</p>
+            <a href="../LakeKawaguchi/index.html">Read Guide</a>
+        </div>
+        <div class="similar-card" style="background-image: url('../images/KawazuSakura/sakura4.jpeg');">
+            <span>Early Spring</span>
+            <h3>Kawazu Sakura</h3>
+            <p>Catch February sakura blooms in Kanagawa with pastel hillsides and festival treats.</p>
+            <a href="../KawazuSakura/index.html">Read Guide</a>
+        </div>
+        <div class="similar-card" style="background-image: url('../images/teamLabs/team7.jpeg');">
+            <span>Night Lights</span>
+            <h3>TeamLabs Borderless</h3>
+            <p>Trade foliage for futuristic light art inside Tokyo's most immersive digital museum.</p>
+            <a href="../teamLabs/index.html">Read Guide</a>
+        </div>
+    </div>
+</section>
+
 <footer>
     © 2025 Travel Japan | traveljapan.blog | Made with 🌸
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>

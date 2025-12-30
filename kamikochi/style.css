@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+.page-nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+header {
+    height: 90vh;
+    background: url('../images/Kamikochi/img2.jpeg') center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+}
+
+header h1 {
+    position: relative;
+    font-size: 3.5em;
+    text-shadow: 2px 2px 12px rgba(0,0,0,0.8);
+    padding: 0 20px;
+    margin-bottom: 0;
+    z-index: 2;
+}
+
+.visit-info {
+    background-color: #e0f7fa;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.1em;
+    color: #00695c;
+    border-bottom: 3px solid #2e8b57;
+    margin-top: 0;
+}
+
+section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.content:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.text {
+    flex: 1 1 500px;
+}
+
+.text p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.image {
+    flex: 1 1 500px;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2e8b57;
+    color: white;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        z-index: 10;
+        flex-direction: column !important;
+    }
+}

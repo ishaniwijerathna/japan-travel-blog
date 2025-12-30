@@ -1,0 +1,12 @@
+/* Home page specific layout refinements */
+.hero {
+  min-height: 70vh;
+}
+
+.hero-text {
+  max-width: 560px;
+}
+
+.gallery-section .gallery-grid {
+  grid-auto-rows: minmax(220px, auto);
+}

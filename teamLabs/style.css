@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>TeamLab Borderless | A World Without Borders</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<style>
 /* ===== RESET ===== */
 * {
   margin: 0;
@@ -18,6 +10,12 @@ body {
   background: #061426;
   color: #fff;
   overflow-x: hidden;
+}
+
+.page-nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 /* ===== SNOW EFFECT ===== */
@@ -46,8 +44,8 @@ body {
 .hero {
   height: 100vh;
   background:
-    linear-gradient(rgba(5,20,40,0.55), rgba(5,20,40,0.9)),
-    url("images/teamLabs/team12.jpg") center/cover no-repeat;
+    linear-gradient(rgba(5, 20, 40, 0.55), rgba(5, 20, 40, 0.9)),
+    url('../images/teamLabs/team12.jpg') center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -99,7 +97,7 @@ h2 {
 }
 
 .info-box {
-  background: rgba(255,255,255,0.06);
+  background: rgba(255, 255, 255, 0.06);
   padding: 30px;
   border-radius: 20px;
   backdrop-filter: blur(8px);
@@ -140,6 +138,7 @@ h2 {
 .fade-left {
   transform: translateX(-60px);
 }
+
 .fade-left.active {
   transform: translateX(0);
 }
@@ -147,6 +146,7 @@ h2 {
 .zoom-in {
   transform: scale(0.9);
 }
+
 .zoom-in.active {
   transform: scale(1);
 }
@@ -163,7 +163,7 @@ h2 {
 }
 
 .image-row img:hover {
-  box-shadow: 0 0 50px rgba(255,255,255,0.4);
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.4);
   transform: scale(1.05);
 }
 
@@ -181,96 +181,12 @@ footer {
   .hero h1 {
     font-size: 2.4rem;
   }
+
   section {
     padding: 70px 7%;
   }
+
   .image-row img {
     height: 420px;
   }
 }
-</style>
-</head>
-
-<body>
-
-<div class="snow"></div>
-
-<!-- HERO -->
-<div class="hero">
-  <h1>TeamLab Borderless </h1>
-  <p>A world of art without borders</p>
-</div>
-
-<!-- ABOUT -->
-<section>
-  <h2>About teamLab Borderless</h2>
-  <p class="description">
-    teamLab Borderless is an immersive digital art museum where light, sound, and motion
-    flow endlessly across spaces. Art escapes boundaries, inviting visitors into a
-    continuously evolving world of wonder.
-  </p>
-</section>
-
-<!-- THEME -->
-<section>
-  <h2>Concept & Theme</h2>
-  <div class="info-grid">
-    <div class="info-box">
-      <h3>Borderless Flow</h3>
-      <p>Artworks move freely between rooms, merging spaces into a single living world.</p>
-    </div>
-    <div class="info-box">
-      <h3>Human Interaction</h3>
-      <p>Movement and presence influence colors, patterns, and sound.</p>
-    </div>
-    <div class="info-box">
-      <h3>Nature × Digital</h3>
-      <p>Inspired by flowers, water, seasons, and light.</p>
-    </div>
-  </div>
-</section>
-
-<!-- GALLERY -->
-<section class="gallery">
-  <h2>Inside teamLab Borderless</h2>
-  <div class="image-row">
-    <img src="images/teamLabs/team3.jpeg" class="animate fade-left" alt="">
-    <img src="images/teamLabs/team1.jpg" class="animate" alt="">
-    <img src="images/teamLabs/team4.jpg" class="animate zoom-in" alt="">
-    <img src="images/teamLabs/team11.jpg" class="animate fade-left" alt="">
-    <img src="images/teamLabs/team7.jpeg" class="animate" alt="">
-    <img src="images/teamLabs/team5.jpeg" class="animate float" alt="">
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section>
-  <h2>The Borderless Experience</h2>
-  <p class="description">
-    There is no map and no correct path. Wander freely, lose yourself in light and sound,
-    and experience a world that responds uniquely to every step you take.
-  </p>
-</section>
-
-<footer>
-  © 2025 teamLab Borderless Inspired Page
-</footer>
-
-<!-- JS -->
-<script>
-const elements = document.querySelectorAll('.animate');
-
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('active');
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.25 });
-
-elements.forEach(el => observer.observe(el));
-</script>
-
-</body>
-</html>
