@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Kawaguchiko Autumn Leaves Festival</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  background: #decdcd;
+  color: #918f8f;
+}
+
+/* HERO BACKGROUND */
+.hero {
+  position: relative;
+  height: 100vh;
+  /* Placeholder background color if image is missing */
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/kawaguchi/Corridor2.jpeg") center/cover no-repeat;
+  background-color: #6A0DAD; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  max-width: 900px;
+  padding: 20px;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  color: #d97f25;
+  margin-bottom: 40px;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.8);
+}
+
+
+
+.hero h3 {
+  font-size: 3.2rem;
+  color: #d97f25;
+  margin-bottom: 40px;
+  text-shadow: 0 4px 10px #000000cc;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  line-height: 1.7;
+}
+
+/* SECTIONS */
+.section {
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 5; /* Keep content above leaves slightly if desired, or set lower to let leaves pass over */
+}
+
+.section h2 {
+  font-size: 2.3rem;
+  margin-bottom: 15px;
+  color: #d97f25;
+}
+
+.section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+/* IMAGE GRID */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+  transition: transform 0.4s ease;
+  background: #222; /* placeholder */
+}
+
+.image-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* --- CORRECTED FALLING LEAVES CSS --- */
+.leaf {
+  position: fixed;
+  top: -10vh;
+  user-select: none;
+  pointer-events: none; /* Crucial: lets you click buttons under the leaves */
+  z-index: 9999;
+  filter: drop-shadow(0 0 5px rgba(255, 69, 0, 0.5));
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0vh) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  25% {
+    transform: translateY(25vh) translateX(40px) rotate(90deg);
+  }
+  50% {
+    transform: translateY(50vh) translateX(-40px) rotate(180deg);
+  }
+  75% {
+    transform: translateY(75vh) translateX(40px) rotate(270deg);
+  }
+  100% {
+    transform: translateY(110vh) translateX(-20px) rotate(360deg);
+    opacity: 0.5;
+  }
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px 20px 30px;
+  background-color: #d2691e;
+  color: white;
+  font-size: 0.95rem;
+  opacity: 0.75;
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>🍂 Kawaguchiko Autumn Leaves Festival 🍂</h1>
+  </div>
+</section>
+
+<section class="section" style="color: black;">
+  <h2>Momiji Corridor (Maple Corridor)</h2>
+  <p>
+    The Momiji Corridor is the centerpiece of the Kawaguchiko Autumn Leaves Festival, famous for its tunnel of vibrant red, orange, and yellow maple trees. Walking through this natural tunnel is a truly magical experience, especially in the evening when the trees are illuminated from sunset until around 10 PM, creating a glowing, dream-like atmosphere perfect for photography and peaceful strolls.
+  </p>
+
+  <h3>Highlights & Things to See:</h3>
+  <ul>
+    <li><strong>Evening illuminations:</strong> Soft lights make the maple leaves shimmer in warm tones.</li>
+    <li><strong>Reflections:</strong> On calm days, the nearby lake reflects the autumn colors, offering stunning photo opportunities.</li>
+    <li><strong>Local food stalls:</strong> Seasonal snacks and warm drinks are available during the festival.</li>
+    <li><strong>Photography spots:</strong> Ideal for both casual snapshots and professional photography.</li>
+  </ul><br>
+
+  <h3>How to Access:</h3>
+  <ul>
+    <li><strong>By Train:</strong> Take the Fujikyu Railway to Kawaguchiko Station, then a short local bus or taxi ride to the corridor.</li>
+    <li><strong>By Bus:</strong> Direct highway buses are available from Shinjuku or Tokyo Station to Kawaguchiko Station.</li>
+    <li><strong>By Car:</strong> Approximately 2 hours from central Tokyo via the Chuo Expressway. Parking is available near the festival area but can be crowded on weekends.</li>
+  </ul><br>
+
+  <h3>Best Time to Visit:</h3>
+  <ul>
+    <li><strong>Peak autumn colors:</strong> Early to mid-November</li>
+    <li><strong>Evening visit:</strong> For illumination, aim for sunset to enjoy the magical lighting.</li>
+  </ul><br>
+
+  <p>
+    The Momiji Corridor is a must-see for anyone visiting Kawaguchiko in autumn, offering a perfect combination of natural beauty, festival atmosphere, and iconic seasonal views.
+  </p>
+
+  <div class="image-grid">
+    <img src="images/kawaguchi/Corridor1.jpeg" alt="Momiji Corridor 1">
+    <img src="images/kawaguchi/Corridor3.jpg" alt="Momiji Corridor 2">
+    <img src="images/kawaguchi/Corridor2.jpeg" alt="Momiji Corridor 3">
+  </div>
+</section>
+
+<!-- SCENIC VIEWS AROUND LAKE KAWAGUCHIKO -->
+<section class="section" style="color: black;">
+  <h2>Scenic Views Around Lake Kawaguchiko</h2>
+  <p>
+    Autumn trees line the lake’s shores, offering peaceful walks and stunning reflections of Mount Fuji on calm days — a true seasonal masterpiece. The vibrant mix of red, orange, and golden foliage along the water creates a serene environment perfect for relaxing, photography, and enjoying nature.
+  </p>
+
+  <h3>Highlights & Things to See:</h3>
+  <ul>
+    <li><strong>Lake reflections:</strong> Calm mornings and evenings provide perfect mirror-like reflections of Mount Fuji framed by autumn colors.</li>
+    <li><strong>Walking & cycling paths:</strong> Scenic trails around the lake allow leisurely walks or bike rides.</li>
+    <li><strong>Boat rides:</strong> Enjoy the autumn view from a traditional sightseeing boat on the lake.</li>
+    <li><strong>Photography spots:</strong> Ideal for capturing panoramic views of Mount Fuji with colorful trees along the shoreline.</li>
+    <li><strong>Nearby attractions:</strong> Visit nearby parks, shrines, and cafes while enjoying the autumn scenery.</li>
+  </ul><br>
+
+  <h3>How to Access:</h3>
+  <ul>
+    <li><strong>By Train:</strong> Take the Fujikyu Railway to Kawaguchiko Station. From there, local buses or taxis can reach various lakeside spots.</li>
+    <li><strong>By Bus:</strong> Highway buses from Shinjuku or Tokyo Station directly connect to Kawaguchiko Station.</li>
+    <li><strong>By Car:</strong> About 2 hours from Tokyo via the Chuo Expressway. Parking is available at popular lakeside viewing spots.</li>
+  </ul><br>
+
+  <h3>Best Time to Visit:</h3>
+  <ul>
+    <li><strong>Peak autumn colors:</strong> Early to mid-November</li>
+    <li><strong>Morning or late afternoon:</strong> For calm waters and ideal reflection shots of Mount Fuji.</li>
+  </ul>
+
+  <p>
+    Lake Kawaguchiko’s autumn scenery offers a perfect combination of tranquility, natural beauty, and unforgettable views, making it a must-visit spot during the fall season.
+  </p>
+
+
+  <div class="image-grid">
+    <img src="images/kawaguchi/lake1.jpeg" alt="Lake View 1">
+    <img src="images/kawaguchi/lake3.jpeg" alt="Lake View 2">
+    <img src="images/kawaguchi/lake2.jpeg" alt="Lake View 3">
+  </div>
+</section>
+
+
+<!-- ARAKURAYAMA SENGEN PARK -->
+<section class="section" style="color: black;">
+  <h2>Arakurayama Sengen Park</h2>
+  <p>
+    From this elevated viewpoint, visitors can enjoy one of Japan’s most iconic scenes — Mount Fuji perfectly framed by vibrant autumn leaves. The park is especially famous for the combination of the five-storied Chureito Pagoda, the colorful foliage, and Mount Fuji in the background, creating a quintessential Japanese autumn image.
+  </p>
+
+  <h3>Highlights & Things to See:</h3>
+  <ul>
+    <li><strong>Chureito Pagoda:</strong> A popular photography spot offering the classic Mount Fuji and autumn leaves view.</li>
+    <li><strong>Observation Decks:</strong> Several viewpoints provide panoramic vistas of the surrounding mountains and Lake Kawaguchiko.</li>
+    <li><strong>Autumn Colors:</strong> Maple and ginkgo trees turn brilliant shades of red, orange, and gold.</li>
+    <li><strong>Walking Trails:</strong> Stairs and trails lead visitors through serene forested areas and scenic spots.</li>
+    <li><strong>Photography Opportunities:</strong> Sunset and early morning light are ideal for capturing stunning autumn landscapes.</li>
+  </ul><br>
+
+  <h3>How to Access:</h3>
+  <ul>
+    <li><strong>By Train:</strong> Take the Fujikyu Railway to Shimo-Yoshida Station. From there, it’s a 10–15 minute walk or taxi ride to the park entrance.</li>
+    <li><strong>By Bus:</strong> Local buses from Kawaguchiko Station stop near the park.</li>
+    <li><strong>By Car:</strong> Approximately 15–20 minutes from Kawaguchiko Station. Limited parking is available near the park entrance.</li>
+  </ul><br>
+
+  <h3>Best Time to Visit:</h3>
+  <ul>
+    <li><strong>Peak autumn colors:</strong> Early to mid-November</li>
+    <li><strong>Time of day:</strong> Sunrise or late afternoon for the best light and fewer crowds</li>
+  </ul>
+
+  <p>
+    Arakurayama Sengen Park is a must-visit for photographers, nature lovers, and anyone seeking a serene and iconic view of Mount Fuji surrounded by brilliant autumn foliage.
+  </p>
+
+    <div class="image-grid">
+    <img src="images/kawaguchi/sengen1.jpeg" alt="Lake View 1">
+    <img src="images/kawaguchi/sengen3.jpeg" alt="Lake View 2">
+    <img src="images/kawaguchi/sengen2.jpeg" alt="Lake View 3">
+  </div>
+</section>
+
+
+</section>
+
+
+<footer>
+  © 2025 Kawaguchiko Autumn Travel 🍁
+</footer>
+
+<script>
+const TOTAL_LEAVES = 20; // Number of leaves at start
+const LEAF_EMOJIS = ['🍁','🍂', '🍂', '🍁']; 
+
+function createLeaf() {
+  const leaf = document.createElement("div");
+  leaf.className = "leaf";
+  
+  // Choose random emoji
+  leaf.innerText = LEAF_EMOJIS[Math.floor(Math.random() * LEAF_EMOJIS.length)];
+
+  // Random horizontal start
+  leaf.style.left = Math.random() * 100 + "vw";
+  
+  // Random duration between 6s and 12s
+  const duration = 6 + Math.random() * 6;
+  leaf.style.animationDuration = duration + "s";
+  
+  // Random size
+  leaf.style.fontSize = (16 + Math.random() * 20) + "px";
+
+  document.body.appendChild(leaf);
+
+  // Clean up leaf after it finishes falling
+  setTimeout(() => {
+    leaf.remove();
+  }, duration * 1000);
+}
+
+// Initial spawn
+for(let i = 0; i < TOTAL_LEAVES; i++){
+  // Stagger the initial start times
+  setTimeout(createLeaf, i * 400);
+}
+
+// Keep spawning leaves forever
+setInterval(createLeaf, 900);
+</script>
+
+</body>
+</html>
